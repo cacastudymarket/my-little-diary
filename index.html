@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Little Diary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📔 My Little Diary</h1>
+
+    <div class="button-row">
+      <button id="toggleThemeBtn">🌗 Toggle Theme</button>
+      <button id="connectBtn">🔌 Connect Wallet</button>
+      <button id="loginBtn">🔑 Login Wallet</button>
+      <button id="logoutBtn" style="display:none;">🚪 Logout</button>
+    </div>
+
+    <p id="walletAddress"></p>
+    <p id="loginStatus"></p>
+
+    <!-- Login Prompt -->
+    <div id="loginNotice" style="text-align:center; margin:2rem 0; display:none;">
+      <p>🔐 Silakan login dengan wallet kamu untuk mengakses diary</p>
+    </div>
+
+    <!-- Diary App -->
+    <div id="diaryApp" style="display:none;">
+      <form id="diaryForm">
+        <h2>Tulis Catatan</h2>
+        <input type="text" id="titleInput" placeholder="Judul catatan" required><br><br>
+        <textarea id="bodyInput" placeholder="Isi catatan kamu..." rows="6" required></textarea><br><br>
+
+        <label for="moodInput">Mood kamu hari ini 😄:</label><br>
+        <select id="moodInput" required>
+          <option value="">Pilih...</option>
+          <option value="😃 Bahagia">😃 Bahagia</option>
+          <option value="🙂 Biasa aja">🙂 Biasa aja</option>
+          <option value="😐 Datar">😐 Datar</option>
+          <option value="😔 Sedih">😔 Sedih</option>
+          <option value="😩 Capek">😩 Capek</option>
+        </select><br><br>
+
+        <button type="submit">Simpan Catatan</button>
+      </form>
+
+      <input type="text" id="searchInput" placeholder="🔍 Cari catatan..." />
+
+      <div id="diaryList">
+        <h2>Catatan Kamu</h2>
+        <ul id="diaryItems"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
