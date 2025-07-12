@@ -44,7 +44,4 @@ This project was developed with the goal of:
 
 ## 🖼️ Screenshots
 
-> *(You can add your own screenshots in a `/screenshots/` folder and link them here)*
-
-```html
-<img src="screenshots/my-little-diary.png" width="600" alt="My Little Diary Interface">
+👉 [Open My Little Diary UI](https://github.com/cacastudymarket/my-little-diary/tree/main/screenshots)
